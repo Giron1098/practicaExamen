@@ -18,6 +18,9 @@ class MostrarDatosViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        
         if nombreUsuario != "" || password != ""
         {
             LBL_Mensaje.text = "Hola, \(nombreUsuario ?? "a"). Bienvenido."

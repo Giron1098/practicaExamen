@@ -6,34 +6,42 @@
 //
 
 import UIKit
+import CLTypingLabel
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var BTN_RedesSociales: UIButton!
-    
     @IBOutlet weak var TF_Username: UITextField!
     @IBOutlet weak var TF_Password: UITextField!
     
     
+    @IBOutlet weak var LBL_Login: CLTypingLabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        LBL_Login.text = "Iniciar sesión"
     }
 
-    @IBAction func BTN_A_RedesSociales(_ sender: UIButton) {
-        print(sender.titleLabel?.text ?? "")
-    }
     
     @IBAction func BTN_A_Login(_ sender: UIButton) {
         
         if (TF_Username.text != "" && TF_Password.text != "")
         {
-            performSegue(withIdentifier: "enviarDatos", sender: nil)
-            TF_Username.text = ""
-            TF_Password.text = ""
+            if let email = TF_Username.text
+            {
+                if let password = TF_Password.text
+                {
+                    print(email)
+                    print(password)
+                    
+                    performSegue(withIdentifier: "enviarDatos", sender: nil)
+                    TF_Username.text = ""
+                    TF_Password.text = ""
+                }
+            }
             
         } else {
-            print("Falta por llenar algún campo")
+            showNoEmptyFieldsAlert()
         }
     }
     
@@ -49,6 +57,23 @@ class ViewController: UIViewController {
     }
 
         
+    }
+    
+    //OCULTAR TECLADO
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    //Funcion para mostrar un alert en caso de que exista algùn campo vacío
+    func showNoEmptyFieldsAlert ()
+    {
+        let alerta = UIAlertController(title: "Hubo un problema", message:"No se permiten campos vacíos", preferredStyle: .alert)
+        
+        let actionAceptar = UIAlertAction(title: "Aceptar", style:.default, handler: nil)
+        
+        alerta.addAction(actionAceptar)
+        
+        present(alerta, animated: true, completion: nil)
     }
 }
 
