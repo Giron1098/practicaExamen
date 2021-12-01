@@ -22,6 +22,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         LBL_Login.text = "Iniciar sesión"
+        
+        //Recuperamos las credenciales guardadas previamente en caso de que un usuario se haya logueado correctamente
+        let defaults = UserDefaults.standard
+        
+        if let correo = defaults.value(forKey: "correo") as? String
+        {
+            performSegue(withIdentifier: "enviarDatos", sender: self)
+        }
     }
 
     
