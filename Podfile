@@ -7,5 +7,7 @@ target 'practicaExamen' do
 
   # Pods for practicaExamen
   pod 'CLTypingLabel'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
 
 end

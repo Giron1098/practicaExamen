@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B0DF1CB2755EB6A001991DB /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0DF1CA2755EB6A001991DB /* RegistroViewController.swift */; };
+		0B245DB527571BEE00CBBEE7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B245DB427571BEE00CBBEE7 /* GoogleService-Info.plist */; };
 		2850ACAE27209F1300D1FB25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850ACAD27209F1300D1FB25 /* AppDelegate.swift */; };
 		2850ACB027209F1300D1FB25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850ACAF27209F1300D1FB25 /* SceneDelegate.swift */; };
 		2850ACB227209F1300D1FB25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850ACB127209F1300D1FB25 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		0B0DF1CA2755EB6A001991DB /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
+		0B245DB427571BEE00CBBEE7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		26F66C26B75E08F72CB7B7EB /* Pods-practicaExamen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-practicaExamen.debug.xcconfig"; path = "Target Support Files/Pods-practicaExamen/Pods-practicaExamen.debug.xcconfig"; sourceTree = "<group>"; };
 		2850ACAA27209F1300D1FB25 /* practicaExamen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = practicaExamen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2850ACAD27209F1300D1FB25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				2850ACB627209F2A00D1FB25 /* Assets.xcassets */,
 				2850ACB827209F2A00D1FB25 /* LaunchScreen.storyboard */,
 				2850ACBB27209F2A00D1FB25 /* Info.plist */,
+				0B245DB427571BEE00CBBEE7 /* GoogleService-Info.plist */,
 				2850ACC22720D87600D1FB25 /* MostrarDatosViewController.swift */,
 				0B0DF1CA2755EB6A001991DB /* RegistroViewController.swift */,
 			);
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2850ACBA27209F2A00D1FB25 /* LaunchScreen.storyboard in Resources */,
+				0B245DB527571BEE00CBBEE7 /* GoogleService-Info.plist in Resources */,
 				2850ACB727209F2A00D1FB25 /* Assets.xcassets in Resources */,
 				2850ACB527209F1300D1FB25 /* Main.storyboard in Resources */,
 			);

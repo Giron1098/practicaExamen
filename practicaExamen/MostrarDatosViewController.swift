@@ -6,11 +6,11 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class MostrarDatosViewController: UIViewController {
     
-    var nombreUsuario:String?
-    var password:String?
 
     @IBOutlet weak var LBL_Mensaje: UILabel!
     
@@ -21,17 +21,22 @@ class MostrarDatosViewController: UIViewController {
         
         self.navigationItem.setHidesBackButton(true, animated: true)
         
-        if nombreUsuario != "" || password != ""
-        {
-            LBL_Mensaje.text = "Hola, \(nombreUsuario ?? "a"). Bienvenido."
-            print("Contraseña del usuario: \(password ?? "b")")
-            
-        } else {
-            print("No hay datos")
-        }
     }
     
-
+    @IBAction func BTN_A_CerrarSesión(_ sender: UIBarButtonItem) {
+        
+        let firebaseAuth = Auth.auth()
+    do {
+      try firebaseAuth.signOut()
+        print("Cierre de sesión realizado correctamente")
+        navigationController?.popToRootViewController(animated: true)
+    } catch let error as NSError {
+        print("Error signing out: \(error.localizedDescription)")
+    }
+      
+        
+    }
+    
     /*
     // MARK: - Navigation
 

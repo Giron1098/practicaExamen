@@ -19,12 +19,12 @@
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="kWQ-Sb-PYV">
                                 <rect key="frame" x="50" y="331" width="314" height="257"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="viF-CH-zjJ">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ricardo.gc@email.com" borderStyle="roundedRect" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="viF-CH-zjJ">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="39.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2X5-Od-sAl">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2X5-Od-sAl">
                                         <rect key="frame" x="0.0" y="72.5" width="314" height="39.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
@@ -99,31 +99,26 @@
         <scene sceneID="eyv-4q-04D">
             <objects>
                 <viewController id="01K-eZ-68g" customClass="RegistroViewController" customModule="practicaExamen" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Z9L-dJ-xMh">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Z9L-dJ-xMh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="aQu-uy-PwB">
-                                <rect key="frame" x="50" y="320" width="314" height="257"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" spacing="66" translatesAutoresizingMaskIntoConstraints="NO" id="aQu-uy-PwB">
+                                <rect key="frame" x="50" y="320" width="314" height="256.5"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre de usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aFL-a5-dhM">
-                                        <rect key="frame" x="0.0" y="0.0" width="314" height="39.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" id="iDo-43-wqB">
-                                        <rect key="frame" x="0.0" y="72.5" width="314" height="39.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="41.5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" textContentType="email"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aut-Gm-ehf">
-                                        <rect key="frame" x="0.0" y="145" width="314" height="39.5"/>
+                                        <rect key="frame" x="0.0" y="107.5" width="314" height="41.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62k-bs-z4o">
-                                        <rect key="frame" x="0.0" y="217.5" width="314" height="39.5"/>
+                                        <rect key="frame" x="0.0" y="215" width="314" height="41.5"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="       Registrarte       ">
@@ -161,12 +156,14 @@
                             <constraint firstItem="fOq-KR-hOQ" firstAttribute="trailing" secondItem="aQu-uy-PwB" secondAttribute="trailing" constant="50" id="v0D-94-UOx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="kar-ee-vUF"/>
+                    <navigationItem key="navigationItem" id="kar-ee-vUF">
+                        <barButtonItem key="backBarButtonItem" title="Atrás" id="oEt-44-ojK"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="LBL_Registro" destination="Xe3-GJ-pRz" id="Xhe-kZ-1aS"/>
                         <outlet property="TF_Email" destination="iDo-43-wqB" id="Cg0-jc-wLy"/>
-                        <outlet property="TF_NombreUsuario" destination="aFL-a5-dhM" id="ibJ-hB-fea"/>
                         <outlet property="TF_Password" destination="Aut-Gm-ehf" id="ARs-kC-2sH"/>
+                        <segue destination="wMY-ih-U8o" kind="show" identifier="usuarioRegistrado" id="D51-jz-KCZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u5z-a8-do1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -192,14 +189,21 @@
                         <viewLayoutGuide key="safeArea" id="paq-02-zg6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="NP5-YG-krF"/>
+                    <navigationItem key="navigationItem" id="NP5-YG-krF">
+                        <barButtonItem key="rightBarButtonItem" title="Cerrar sesión" image="person.fill.xmark" catalog="system" id="n25-nw-r4U">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="BTN_A_CerrarSesión:" destination="wMY-ih-U8o" id="BxJ-eZ-w1f"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="LBL_Mensaje" destination="5oN-aG-mwX" id="Cur-dU-BlL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iRz-W9-Gvl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1829" y="-260"/>
+            <point key="canvasLocation" x="2620" y="-46"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1BB-DR-SpW">
@@ -209,7 +213,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gV8-X7-ZPt">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" systemColor="systemBlueColor"/>
+                        <color key="barTintColor" systemColor="systemTealColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -222,24 +226,32 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="Xe3-GJ-pRz"/>
-        <designable name="YBf-Xp-xO5"/>
+        <designable name="Xe3-GJ-pRz">
+            <size key="intrinsicContentSize" width="141" height="48"/>
+        </designable>
+        <designable name="YBf-Xp-xO5">
+            <size key="intrinsicContentSize" width="221" height="48"/>
+        </designable>
     </designables>
-    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <inferredMetricsTieBreakers>
+        <segue reference="eZ9-yR-hiV"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="login" width="512" height="512"/>
+        <image name="person.fill.xmark" catalog="system" width="128" height="88"/>
         <image name="registro" width="444" height="444"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
